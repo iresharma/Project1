@@ -1,0 +1,313 @@
+/*
+black #171219
+purplr #4C2A85
+blue #6B7FD7
+cyan #BCEDF6
+something #DDFBD2
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+nav {
+
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+nav ul {
+    list-style-type: none;
+    border-top: 5px solid #FFA8AC;
+    background-color: #171219;
+}
+
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 25px;
+    color: #FFA8AC;
+}
+
+nav ul li a:hover {
+    color: #DDFBD2;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 40px;
+    background-color: #FFA8AC;
+    color: #403D39;
+    font-family: 'Mansalva', cursive;
+}
+
+@media screen and (min-width:576px) {
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    nav ul li {
+        flex: 1 0 auto;
+    }
+
+    .logo {
+        display: block;
+        text-align: center;
+    }
+
+    .logo .fa {
+        display: none;
+    }
+
+    nav {
+        position: static;
+    }
+
+}
+
+
+
+
+/*
+    Banner
+*/
+
+
+#banner {
+    min-height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("Banner.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-text {
+    font-size: : 20px;
+    text-transform: uppercase;
+    color: #DDFBD2;
+    text-align: center;
+    font-family: 'Mansalva', cursive;
+}
+
+.border-underline {
+    width: 200px;
+    border: 3px solid #CCC5B9;
+    margin: 10px auto 10px auto;
+}
+
+.banner-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-btn button {
+    font-size: 30px;
+    padding: 15px;
+    margin: 0 10px;
+    background: transparent;
+    color: #FFE799;
+    border: 2px solid #CCC5B9;
+}
+
+.banner-btn button:hover {
+    color: #0F1A20;
+    background: #CCC5B9;
+}
+
+.banner-btn button a {
+    text-decoration: none;
+    color: #FFE799;
+}
+
+.banner-btn button a:hover {
+    text-decoration: none;
+    color: #0F1A20;;
+}
+
+/**
+    Social
+**/
+
+#social {
+    width: 100px;
+    height: 100px;
+    background-color: #828B99;
+    position: fixed;
+    bottom: 30px;
+    right: 0px;
+    color: #511C8A;
+    padding-left: 4px;
+}
+
+#social ul {
+    list-style-type: none;
+}
+
+
+
+/**
+    Skills
+**/
+
+#skills {
+    padding: 60px 0;
+    background-color: #DDFBD2;
+}
+
+.skills-contain {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 95vw;
+    margin: 0 auto; 
+}
+
+.skills-item {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.skills-item .fa {
+    font-size: 60px;
+    color: #403D39;
+}
+
+.skills-item h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 30px 0;
+    color: #171219;
+    text-transform: uppercase;
+}
+
+.skills-item p {
+    width: 75%;
+    margin:0 auto;
+    color: #171219;
+}
+
+@media screen and (min-width: 576px) {
+    .skills-contain {
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        grid-column-gap: 1em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .skills-contain {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+    }
+}
+
+/**
+    Services
+**/
+
+.title {
+    margin: 10px 0;
+}
+
+.title-text {
+    text-align: center;
+    font-size: 40px;
+    color: ;
+    font-style: italic;
+    text-transform: uppercase;
+    font-family: 'Mansalva', cursive;
+}
+
+.title-underline {
+    width: 200px;
+    border: 2px solid;
+    margin: 0 auto;
+}
+
+#services {
+    min-height: 100vh;
+    background-image: url("Service-Background.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 0 80px 0;
+}
+
+.service-contain {
+    max-width: 90px;
+    margin: 0 auto;
+    color: #FFA8AC;
+}
+
+.service-item {
+    overflow: hidden;
+    position: relative;
+    padding: 60px;
+}
+.service-item .fa {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.service-item-black {
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+}
+
+.service-item-white {
+    background: linear-gradient(rgba(206,206,206,0.3),rgba(206,206,206,0.3));
+}
+
+.front-text {
+    text-align: center;
+    transition: transform 25s;
+}
+
+.back-text {
+    position: absolute;
+    bottom: -15em;
+    width: 75%;
+    margin: 0 auto;
+    transition: bottom 2s;
+    padding: 36px 0;
+}
+
+.back-text h1 {
+    margin-bottom: 20px;
+}
+
+.back-text button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid;
+    font-size: 20px;
+    color: ;
+}
+
+.back-text button:hover {
+    background-color: ;
+    color: ;
+}
+
+.service-item-white button {
+    background: ;
+    border: ;
+}
+
