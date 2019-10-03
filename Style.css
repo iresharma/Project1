@@ -204,7 +204,7 @@ nav ul li a:hover {
     }
 }
 
-@media screen and (max-width: 650px) and (min-width:576px) {
+@media screen and (max-width: 770px) and (min-width:576px) {
     .skill-contain {
         flex-wrap: wrap;
     }
