@@ -224,7 +224,7 @@ nav ul li a:hover {
 .title-text {
     text-align: center;
     font-size: 40px;
-    color: rgba(255,255,255);
+    color: rgba(0,0,0);
     font-style: italic;
     text-transform: uppercase;
     font-family: 'Mansalva', cursive;
