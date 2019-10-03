@@ -74,8 +74,7 @@ nav ul li a:hover {
 
     nav {
         display: block;
-        position: sticky;
-        top: 0px;
+        position: static;
     }
 
 }
@@ -108,7 +107,7 @@ nav ul li a:hover {
 }
 
 .banner-text {
-    font-size: : 20px;
+    font-size: 20px;
     text-transform: uppercase;
     color: #DDFBD2;
     text-align: center;
@@ -213,14 +212,7 @@ nav ul li a:hover {
     margin:0 auto;
     color: #171219;
 }
-/* /* 
-@media screen and (max-width: 576px) {
-    .skill-contain {
-        display: grid;
-        grid-template-columns:  1fr 1fr;
-        grid-column-gap: 1em;
-    }
-} */
+
 
 @media screen and (max-width: 576px) {
     .skill-contain {
@@ -251,7 +243,7 @@ nav ul li a:hover {
 .title-text {
     text-align: center;
     font-size: 40px;
-    color: ;
+    color: #FFA8AC;
     font-style: italic;
     text-transform: uppercase;
     font-family: 'Mansalva', cursive;
@@ -319,7 +311,7 @@ nav ul li a:hover {
     padding: 10px 20px;
     border: 2px solid;
     font-size: 20px;
-    color: ;
+    color: #FFA8AC;
 }
 
 .back-text button:hover {
@@ -335,4 +327,28 @@ nav ul li a:hover {
 .service-item-white button:hover {
     background-color: #403D39;
     color: #FFA8AC;
+}
+
+
+/*
+    Div exp
+*/
+
+.div-par {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 5px solid #511C8A;
+}
+
+.div-child {
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid #FFA8AC;
+}
+
+
+.div-child-var {
+    display: inline-block;
+    border: 5px dashed #FFE799;
 }
