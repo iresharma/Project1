@@ -14,11 +14,11 @@
     <!--nav-->
     <nav>
         <ul>
-            <li><a href="#" class="logo">Iresharma<i class="fa fa-arrow-down"></i></a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Skills</a></li>
+            <li><a href="#" class="logo">iresharma<i class="fa fa-arrow-down"></i></a></li>
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
             <li><a href="#">Work</a></li>
         </ul>
     </nav>
@@ -27,7 +27,7 @@
     <!--Banner-->
     <header id="banner">
         <div class="banner-title">
-            <h1 class="banner-text">Iresharma</h1>
+            <h1 class="banner-text">iresharma</h1>
             <div class="banner-underline"></div>
             <div class="banner-btn">
                 <button type="button"><a target="_blank" href="https://github.com/iresharma">Github</a></button>
@@ -44,25 +44,25 @@
             <div class="skills-item">
                 <i class="fa fa-code"></i>
                 <h1>Code</h1>
-                <p>Coding has always been my passion and I have always taken keen interest in it. I aspire to be an app developer in future and hence I am trying to learn various languages.For me "Coding is Life!."</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci voluptates itaque aliquam aspernatur sunt.</p>
             </div> 
 
             <div class="skills-item">
                 <i class="fa fa-school"></i>
                 <h1>Student</h1>
-                <p>I am currently pursuing my bachelors in computer science engineering from National Institute of Engineering, Mysore. Physics happens to be my favourite subject, apart from physics I also have interest in finance and economics. </p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci voluptates itaque aliquam aspernatur sunt.</p>
             </div> 
 
             <div class="skills-item">
                 <i class="fa fa-camera-retro"></i>
                 <h1>Photography</h1>
-                <p>I love to travel places and capture the beauty of nature in my camera. Photography is somesomething I am really into, clicking pictures is an art.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci voluptates itaque aliquam aspernatur sunt.</p>
             </div>
             
             <div class="skills-item">
                 <i class="fa fa-basketball-ball"></i>
                 <h1>Basketball</h1>
-                <p>Basketball is my favourite sport, I have been playing it since secondary school.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci voluptates itaque aliquam aspernatur sunt.</p>
             </div> 
         </div>
     </section>
@@ -80,11 +80,11 @@
         </div>
         <div class="services-contain">
             <article class="service-item service-item-black">
-                <div class="front-text">
+                <div onmouseout="t1o()" onmouseover="t1()" class="front-text">
                     <i class="fa fa-gears"></i>
                     <h1>Web Developemnt</h1>
                 </div>
-                <div class="back-text">
+                <div id="b1" class="back-text">
                     <h1>Web Developemnt</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, inventore optio! Ea, maxime vel. Temporibus?
@@ -94,10 +94,10 @@
             </article>
 
             <article class="service-item service-item-white">
-                <div class="front-text">                        <i class="fa fa-camera-retro"></i>
+                <div onmouseout="t2o()" onmouseover="t2()" class="front-text">                        <i class="fa fa-camera-retro"></i>
                     <h1>Photoshoots</h1>
                 </div>
-                <div class="back-text">
+                <div id="b2" class="back-text">
                     <h1>Photoshoots</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, inventore optio! Ea, maxime vel. Temporibus?
@@ -106,11 +106,11 @@
                 </div>
             </article>
             <article class="service-item service-item-black">
-                <div class="front-text">
+                <div onmouseout="t3o()" onmouseover="t3()" class="front-text">
                     <i class="fa fa-basketball-ball"></i>                        
                     <h1>Basketball Training</h1>
                 </div>
-                <div class="back-text">
+                <div id="b3" class="back-text">
                     <h1>Basketball Training</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, inventore optio! Ea, maxime vel. Temporibus?
@@ -119,11 +119,11 @@
                 </div>
             </article>
             <article class="service-item service-item-white">
-                <div class="front-text">
+                <div onmouseout="t4o()" onmouseover="t4()" class="front-text">
                     <i class="fa fa-school"></i>
                     <h1>Tutorials</h1>
                 </div>
-                <div class="back-text">
+                <div id="b4" class="back-text">
                     <h1>Tutorials</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, inventore optio! Ea, maxime vel. Temporibus?
@@ -136,21 +136,42 @@
 
     <!--End of Services section-->
 
-
-    <!--Work Section-->
-
-    <section class="work columns">
-        <div class="title column">
-            <h1> Work </h1>
-        </div>
-        <div class="title column">
-            <h1> Work </h1>
-        </div>
-        <div class="title column">
-            <h1> Work </h1>
-        </div>
-        <!-- <div class="work-title-underline"></div> -->
-        
-    </section>
 </body>
+<script>
+    function t1() {
+        var p = document.getElementById("b1");
+        p.style.visibility = "visible";
+    }
+    function t1o() {
+        var p = document.getElementById("b1");
+        p.style.visibility = "hidden";
+    }
+
+    function t2() {
+        var p = document.getElementById("b2");
+        p.style.visibility = "visible";
+    }
+    function t2o() {
+        var p = document.getElementById("b2");
+        p.style.visibility = "hidden";
+    }
+
+    function t3() {
+        var p = document.getElementById("b3");
+        p.style.visibility = "visible";
+    }
+    function t3o() {
+        var p = document.getElementById("b3");
+        p.style.visibility = "hidden";
+    }
+
+    function t4() {
+        var p = document.getElementById("b4");
+        p.style.visibility = "visible";
+    }
+    function t4o() {
+        var p = document.getElementById("b4");
+        p.style.visibility = "hidden";
+    }
+</script>
 </html>

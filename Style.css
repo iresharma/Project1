@@ -17,7 +17,7 @@ body {
 }
 
 nav {
-    position: sticky;
+    position: sticky !important;
     top: 0px;
     z-index: 2;
 }
@@ -74,8 +74,7 @@ nav ul li a:hover {
 
     nav {
         display: block;
-        position: sticky;
-        top: 0px;
+        position: static;
     }
 
 }
@@ -150,6 +149,26 @@ nav ul li a:hover {
     color: #0F1A20;;
 }
 
+/**
+    Social
+**/
+
+#social {
+    width: 100px;
+    height: 100px;
+    background-color: #828B99;
+    position: fixed;
+    bottom: 30px;
+    right: 0px;
+    color: #511C8A;
+    padding-left: 4px;
+}
+
+#social ul {
+    list-style-type: none;
+}
+
+
 
 /**
     Skills
@@ -204,7 +223,7 @@ nav ul li a:hover {
     }
 }
 
-@media screen and (max-width: 770px) and (min-width:576px) {
+@media screen and (max-width: 650px) and (min-width:576px) {
     .skill-contain {
         flex-wrap: wrap;
     }
@@ -224,7 +243,7 @@ nav ul li a:hover {
 .title-text {
     text-align: center;
     font-size: 40px;
-    color: rgba(0,0,0);
+    color: #FFA8AC;
     font-style: italic;
     text-transform: uppercase;
     font-family: 'Mansalva', cursive;
@@ -234,6 +253,7 @@ nav ul li a:hover {
     width: 200px;
     border: 2px solid;
     margin: 0 auto;
+    color: rgb(140, 194, 242);
 }
 
 #services {
@@ -243,6 +263,7 @@ nav ul li a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     padding: 10px 0 80px 0;
+    color: rgb(140, 194, 242);
 }
 
 .service-contain {
@@ -275,12 +296,7 @@ nav ul li a:hover {
 }
 
 .back-text {
-    position: absolute;
-    bottom: -15em;
-    width: 75%;
-    margin: 0 auto;
-    transition: bottom 2s;
-    padding: 36px 0;
+    visibility: hidden;
 }
 
 .back-text h1 {
@@ -333,3 +349,5 @@ nav ul li a:hover {
     display: inline-block;
     border: 5px dashed #FFE799;
 }
+
+
